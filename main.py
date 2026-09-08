@@ -8,7 +8,7 @@ class Item(BaseModel):
     name: str = Field(min_length=1, max_length=100)
     price: float = Field(gt=0)
 
-
+# 第一次练习：返回问候信息
 @app.get("/")
 def hello():
     return {"message": "Hello FastAPI"}
